@@ -1,0 +1,30 @@
+--Create a Tires store database
+
+CREATE TABLE Tires (id INTEGER PRIMARY KEY, Brand text, Size INTEGER, Print integer, Origin text, price Integer);
+
+INSERT INTO Tires values (1,"BS", 325, 582, "JA" ,7000);
+INSERT INTO Tires values (2,"FS", 1200, 598, "TH", 6500);
+INSERT INTO Tires values (3,"BS", 315, 580, "JA", 4000);
+INSERT INTO Tires values (4,"BS", 385, 677, "JA", 1200);
+INSERT INTO Tires values (5,"FS", 750, 623, "TU", 1600);
+INSERT INTO Tires values (6,"FS", 750, 624, "JA", 2100);
+INSERT INTO Tires values (7,"Dayton", 1200, 530, "MA", 7500);
+INSERT INTO Tires values (8,"FS", 325, 833, "JA", 5700);
+INSERT INTO Tires values (9,"Boto", 1200, 157,"CH", 6300);
+INSERT INTO Tires values (10,"Boto", 325, 168, "CH", 6100);
+INSERT INTO Tires values (12,"Funda", 1200, 004, "TU", 7700);
+INSERT INTO Tires values (13,"Boto", 1200, 666, "CH", 6900);
+INSERT INTO Tires values (14,"BS", 215, 613, "IN", 2300);
+INSERT INTO Tires values (15,"Boto", 1000, 168, "CH", 6400);
+INSERT INTO Tires values (16,"FS", 1200, 3000, "JA", 8300);
+
+
+--display the database.
+SELECT * FROM Tires;
+
+--display the database ordered by price.
+SELECT * FROM tires ORDER BY price;
+
+-what is the avg price of a tire on the store?
+SELECT AVG(price) AS "Average tire price"
+FROM tires;
