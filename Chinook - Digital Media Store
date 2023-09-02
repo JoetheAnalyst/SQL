@@ -136,6 +136,7 @@ LEFT JOIN invoices i  ON i.CustomerId =  c.CustomerId
 GROUP BY Employee_FullName;
 
 
+
 -- Which sales agent made the most dollars in sales in 2009?
 
 
