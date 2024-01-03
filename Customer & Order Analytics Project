@@ -98,6 +98,7 @@ GROUP BY Headphone;
 
 -- What was the average amount spent per account in February? 
 
+
 SELECT 
     ROUND(avg(quantity*price)) AS AVG
 FROM febsales feb
@@ -105,6 +106,7 @@ LEFT JOIN customers cust
 ON feb.orderid = cust.order_id
 WHERE length(orderid) = 6
 AND orderid <> 'Order ID';
+
 
 
 -- What was the average quantity of products purchased per account in February?
