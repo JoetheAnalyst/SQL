@@ -151,6 +151,7 @@ WHERE i.invoicedate LIKE '2009%'
 GROUP BY Employee_FullName
 )
 
+
 SELECT 
     Employee_FullName,
     MAX(Total_sales) AS TotalDollars
